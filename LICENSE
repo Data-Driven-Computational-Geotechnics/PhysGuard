@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2026 PhysGuard authors
+Copyright (c) 2026 The PhysGuard Authors: Changjian Zhou, Junfeng Fang,
+Negin Yousefpour, Peng Wu, Bin Yan, Guillermo Narsilio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -18,7 +19,7 @@ This license applies to the PhysGuard additions in this repository:
 - configs/**
 - README.md
 
-The code under realpdebench/ is derived from the RealPDEBench benchmark and
+The code under benchmark/ is derived from the RealPDEBench benchmark and
 is governed by the license in LICENSE.RealPDEBench (CC BY-NC 4.0).
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

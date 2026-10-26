@@ -4,13 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "physguard"
-version = "0.1.0"
-description = "PhysGuard: Fisher-guided gradient projection for sim-to-real neural PDE surrogates."
+version = "1.0.0"
+description = "PhysGuard (NeurIPS 2026): Fisher-guided gradient projection for sim-to-real neural PDE surrogates."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-  { name = "Anonymous" },
+  { name = "Changjian Zhou", email = "changjianz@student.unimelb.edu.au" },
+  { name = "Junfeng Fang" },
+  { name = "Negin Yousefpour", email = "negin.yousefpour@unimelb.edu.au" },
+  { name = "Peng Wu" },
+  { name = "Bin Yan" },
+  { name = "Guillermo Narsilio" },
 ]
 keywords = [
   "scientific-ml",
@@ -20,9 +25,12 @@ keywords = [
   "fluid-dynamics",
   "combustion",
   "spatiotemporal",
+  "neural-operator",
+  "fisher-information",
+  "neurips-2026",
 ]
 classifiers = [
-  "Development Status :: 3 - Alpha",
+  "Development Status :: 4 - Beta",
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
@@ -56,6 +64,12 @@ dependencies = [
   "huggingface-hub",
   "datasets",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard"
+Repository = "https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard"
+Paper = "https://arxiv.org/abs/2606.16602"
+Issues = "https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard/issues"
 
 [project.scripts]
 benchmark = "benchmark.cli:main"

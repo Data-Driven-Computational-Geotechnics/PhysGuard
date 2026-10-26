@@ -1,5 +1,22 @@
 # PhysGuard
 
+<p align="center">
+  <a href="https://neurips.cc/Conferences/2026"><img src="https://img.shields.io/badge/NeurIPS%202026-Accepted-brightgreen" alt="NeurIPS 2026 - Accepted"/></a>
+  <a href="https://arxiv.org/abs/2606.16602"><img src="https://img.shields.io/badge/arXiv-2606.16602-b31b1b?logo=arxiv&logoColor=white" alt="arXiv:2606.16602"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+"/>
+</p>
+
+> 🎉 **This paper has been accepted at NeurIPS 2026.**
+>
+> This repository is the **official PyTorch implementation** of
+> **PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates**
+> ([arXiv:2606.16602](https://arxiv.org/abs/2606.16602)).
+>
+> **Changjian Zhou**<sup>1</sup>, **Junfeng Fang**<sup>2</sup>, **Negin Yousefpour**<sup>1 ✉</sup>, **Peng Wu**<sup>3</sup>, **Bin Yan**<sup>1</sup>, **Guillermo Narsilio**<sup>1</sup>
+>
+> <sup>1</sup> Faculty of Engineering and IT, University of Melbourne &nbsp;·&nbsp; <sup>2</sup> School of Computing, National University of Singapore &nbsp;·&nbsp; <sup>3</sup> Artificial Intelligence Research Institute, iFLYTEK Co., Ltd.
+
 > **Select your operating system below to expand the complete step-by-step guide:**
 >
 > | | OS | Jump to |
@@ -10,7 +27,9 @@
 
 ---
 
-Code for **PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates**.
+Official implementation of **PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates**,
+accepted at the **Conference on Neural Information Processing Systems (NeurIPS 2026)**.
+Paper: [arXiv:2606.16602](https://arxiv.org/abs/2606.16602).
 
 PhysGuard preserves the physics learned during simulation pre-training when adapting
 a neural PDE surrogate to real experimental data. It uses the empirical Fisher
@@ -114,7 +133,7 @@ Click your operating system to expand the complete step-by-step guide:
 
 ```powershell
 # Clone
-git clone https://github.com/<anonymous>/PhysGuard.git
+git clone https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard.git
 cd PhysGuard
 
 # Create and activate env
@@ -208,7 +227,7 @@ watch -n 0.1 nvidia-smi
 ### Step 0 — Setup
 
 ```bash
-git clone https://github.com/<anonymous>/PhysGuard.git
+git clone https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard.git
 cd PhysGuard
 
 conda env create -f environment.yml
@@ -307,7 +326,7 @@ conda init zsh && exec zsh
 ### Step 0 — Setup
 
 ```zsh
-git clone https://github.com/<anonymous>/PhysGuard.git
+git clone https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard.git
 cd PhysGuard
 
 conda env create -f environment.yml
@@ -356,7 +375,7 @@ works in both Zsh and Bash on macOS.
 | L2-SP | `fno/2_l2sp.yaml` | `physguard.finetune_baselines` → `benchmark.eval` |
 | **PhysGuard** ★ | `fno/2_physguard.yaml` | `physguard.finetune_physguard` → `benchmark.eval` |
 
-The script reports 9 RealPDEBench metrics. Per the manuscript, we focus on:
+The script reports 9 RealPDEBench metrics. Per the paper, we focus on:
 - **Rel L₂** — overall accuracy
 - **Low-f / Mid-f / High-f RMSE** — spectral fidelity across frequency bands
 
@@ -410,6 +429,29 @@ See [`physguard/projector.py`](physguard/projector.py) for full details.
 
 ---
 
+## 📝 Citation
+
+If you find PhysGuard useful in your research, please cite our NeurIPS 2026 paper:
+
+```bibtex
+@inproceedings{zhou2026physguard,
+  title     = {PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural {PDE} Surrogates},
+  author    = {Zhou, Changjian and Fang, Junfeng and Yousefpour, Negin and Wu, Peng and Yan, Bin and Narsilio, Guillermo},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2606.16602}
+}
+```
+
+A machine-readable citation is also provided in [`CITATION.cff`](CITATION.cff)
+(use the *"Cite this repository"* button on GitHub).
+
+## 📬 Contact
+
+For questions about the paper or the code, please open a GitHub issue or
+contact Changjian Zhou (changjianz@student.unimelb.edu.au) or the corresponding
+author Negin Yousefpour (negin.yousefpour@unimelb.edu.au).
+
 ## 🙏 Acknowledgements
 
 The dataset, training pipeline, and baseline architectures are built on top
@@ -419,6 +461,10 @@ of [RealPDEBench](https://github.com/AI4Science-WestlakeU/RealPDEBench)
 [AlphaEdit (ICLR 2025)](https://github.com/jianghoucheng/AlphaEdit), which
 apply similar geometric protection mechanisms in continual learning and model
 editing respectively.
+
+The first author is grateful for the support from the University of
+Melbourne's Melbourne Research Scholarship (MRS). Partial support from the
+Australian Department of Education's AEA IV240100185 is also acknowledged.
 
 ## 📜 License
 

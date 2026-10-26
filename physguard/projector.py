@@ -1,6 +1,11 @@
 """
 Null Space Projector for Sim-to-Real Fine-tuning.
 
+Reference (NeurIPS 2026):
+    Zhou et al., "PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real
+    Neural PDE Surrogates", Advances in Neural Information Processing Systems
+    (NeurIPS), 2026.  https://arxiv.org/abs/2606.16602
+
 Core idea: compute the "important parameter subspace" from simulated pre-training,
 then project fine-tuning gradients onto its orthogonal complement (null space),
 so that adaptation to real data does not destroy learned physics.

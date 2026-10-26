@@ -1,6 +1,11 @@
 """
 Null Space Optimizer Wrapper.
 
+Reference (NeurIPS 2026):
+    Zhou et al., "PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real
+    Neural PDE Surrogates", Advances in Neural Information Processing Systems
+    (NeurIPS), 2026.  https://arxiv.org/abs/2606.16602
+
 Wraps a standard PyTorch optimizer and automatically projects gradients
 into the null space before each optimizer step.
 """

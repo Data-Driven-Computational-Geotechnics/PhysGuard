@@ -1,4 +1,4 @@
-# PhysGuard environment setup script for Windows (PowerShell).
+# PhysGuard (NeurIPS 2026) environment setup script for Windows (PowerShell).
 # Automatically detects CUDA driver version and installs compatible torch.
 #
 # Usage:

@@ -13,7 +13,8 @@ The specific baseline is selected by the ``reg_type`` field inside the YAML:
     reg_type: "ewc"   →  Elastic Weight Consolidation
 
 These are the comparison methods reported alongside our PhysGuard results
-in the paper.  PhysGuard itself has its own dedicated entry point in
+in the NeurIPS 2026 paper (https://arxiv.org/abs/2606.16602).  PhysGuard
+itself has its own dedicated entry point in
 ``physguard.finetune_physguard``.
 """
 from __future__ import annotations

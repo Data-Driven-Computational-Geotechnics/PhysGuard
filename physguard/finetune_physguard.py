@@ -21,7 +21,8 @@ Usage:
         --ns_variance_threshold 0.9 \\
         --ns_alpha 1.0
 
-This is the entry point for our method.  The accompanying baselines
+This is the entry point for our method, as described in the NeurIPS 2026
+paper (https://arxiv.org/abs/2606.16602).  The accompanying baselines
 (DFT / L2-SP / EWC) live in ``physguard.finetune_baselines``.
 """
 

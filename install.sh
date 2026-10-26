@@ -1,5 +1,5 @@
 #!/bin/bash
-# PhysGuard environment setup script.
+# PhysGuard (NeurIPS 2026) environment setup script.
 # Automatically detects CUDA driver version and installs compatible torch.
 #
 # Usage:

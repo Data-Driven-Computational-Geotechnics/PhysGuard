@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use PhysGuard in your research, please cite the NeurIPS 2026 paper listed under preferred-citation."
+type: software
+title: "PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates"
+abstract: "Official implementation of PhysGuard (NeurIPS 2026). PhysGuard uses the empirical Fisher Information Matrix of a simulation-pretrained neural PDE surrogate to identify physics-critical parameter directions and projects real-data fine-tuning gradients into their null space, preserving learned physics during sim-to-real adaptation."
+version: 1.0.0
+date-released: 2026-10-26
+license: MIT
+repository-code: "https://github.com/Data-Driven-Computational-Geotechnics/PhysGuard"
+url: "https://arxiv.org/abs/2606.16602"
+keywords:
+  - scientific machine learning
+  - neural operator
+  - PDE surrogate
+  - sim-to-real
+  - Fisher information
+  - gradient projection
+  - NeurIPS 2026
+authors:
+  - family-names: Zhou
+    given-names: Changjian
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+    email: changjianz@student.unimelb.edu.au
+  - family-names: Fang
+    given-names: Junfeng
+    affiliation: "School of Computing, National University of Singapore"
+  - family-names: Yousefpour
+    given-names: Negin
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+    email: negin.yousefpour@unimelb.edu.au
+  - family-names: Wu
+    given-names: Peng
+    affiliation: "Artificial Intelligence Research Institute, iFLYTEK Co., Ltd."
+  - family-names: Yan
+    given-names: Bin
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+  - family-names: Narsilio
+    given-names: Guillermo
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+preferred-citation:
+  type: conference-paper
+  title: "PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates"
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+  conference:
+    name: "Conference on Neural Information Processing Systems (NeurIPS 2026)"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.16602"
+  authors:
+  - family-names: Zhou
+    given-names: Changjian
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+    email: changjianz@student.unimelb.edu.au
+  - family-names: Fang
+    given-names: Junfeng
+    affiliation: "School of Computing, National University of Singapore"
+  - family-names: Yousefpour
+    given-names: Negin
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+    email: negin.yousefpour@unimelb.edu.au
+  - family-names: Wu
+    given-names: Peng
+    affiliation: "Artificial Intelligence Research Institute, iFLYTEK Co., Ltd."
+  - family-names: Yan
+    given-names: Bin
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
+  - family-names: Narsilio
+    given-names: Guillermo
+    affiliation: "Faculty of Engineering and IT, University of Melbourne"
